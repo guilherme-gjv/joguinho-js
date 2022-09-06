@@ -1,5 +1,5 @@
 function personagemPular() {
-    let personagem = document.getElementById("personagem")
+    const personagem = document.getElementById("personagem")
     const personagemEstilosCSS = getComputedStyle(personagem)
     const posicaoDoBottom = personagemEstilosCSS.bottom.split("px")[0]
     if(posicaoDoBottom == "0") {
