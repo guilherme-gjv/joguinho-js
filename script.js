@@ -1,6 +1,7 @@
 function personagemPular() {
     const personagem = document.getElementById("personagem")
     const personagemEstilosCSS = getComputedStyle(personagem)
+const personagemPular = () => {    
     const posicaoDoBottom = personagemEstilosCSS.bottom.split("px")[0]
     if(posicaoDoBottom == "0") {
         const pularClasseCSS = "pula"
