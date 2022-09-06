@@ -1,0 +1,63 @@
+#jogo {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    overflow-x: hidden;
+}
+#bloco {
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 100px;
+    background-color: green;
+    animation: bloco-movimento 1.5s infinite linear;
+}
+
+@keyframes bloco-movimento {
+    0% {
+        right: 0;
+    }
+    50% {
+        right: 50%;
+    }
+    100% {
+        right: 99%;
+    }
+}
+
+#personagem {
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    width: 30px;
+    height: 80px;
+    background-color: black;
+}
+
+.pula {
+    animation: personagem-pula 1s linear;
+}
+
+@keyframes personagem-pula {
+    0% {
+        bottom: 0%;
+    }
+    40% {
+        bottom: 45%;
+    }
+
+    50% {
+        bottom: 50%;
+    }
+
+    60% {
+        bottom: 45%;
+    }
+    100% {
+        bottom: 0%;
+    }
+}
